@@ -17,6 +17,12 @@
 BOARD_VENDOR := motorola
 
 COMMON_PATH := device/motorola/sm4350-common
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/liblbs_core.so|libloc_shim.so \
+    /vendor/lib64/libloc_api_v02.so|libloc_shim.so
+
 SELINUX_IGNORE_NEVERALLOWS := true
 # Architecture
 TARGET_ARCH := arm64
@@ -148,7 +154,7 @@ TARGET_USES_ION := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 #fingerprint
-DEVICE_MATRIX_FILE += $(COMMON_PATH)/vintf/android.hardware.biometrics.fingerprint_v2.1.xml
+#DEVICE_MATRIX_FILE += $(COMMON_PATH)/vintf/android.hardware.biometrics.fingerprint_v2.1.xml
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/fingerprint/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc \
     $(COMMON_PATH)/fingerprint/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc \

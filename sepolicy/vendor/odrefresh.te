@@ -1,0 +1,2 @@
+allow odrefresh vendor_mot_fingerprint_prop:file { open };
+allow odrefresh virtual_fingerprint_hal_prop:file { open };
