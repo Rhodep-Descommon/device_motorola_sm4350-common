@@ -146,10 +146,10 @@ persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 persist.vendor.qcom.bluetooth.scram.enabled=false
-persist.vendor.qcom.bluetooth.soc=moselle
+persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
-vendor.qcom.bluetooth.soc=moselle
+vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
@@ -309,7 +309,7 @@ sys.vendor.shutdown.waittime=500
 
 # SOC
 ro.soc.manufacturer=QTI
-ro.soc.model=SM7325
+ro.soc.model=SM4350
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
@@ -318,7 +318,7 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 debug.stagefright.c2inputsurface=-1
 
 # Surfaceflinger
-ro.sf.lcd_density=400
+ro.sf.lcd_density?=400
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true

@@ -1,3 +1,5 @@
 # Audio
 audio.record.delay=50
 
+# Camera
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
