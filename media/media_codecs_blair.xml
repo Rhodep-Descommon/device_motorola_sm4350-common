@@ -219,7 +219,7 @@
     </Decoders>
     <Encoders>
         <!-- C2 encoders -->
-        <MediaCodec name="c2.qti.avc.encoder" type="video/avc">
+        <!--<MediaCodec name="c2.qti.avc.encoder" type="video/avc">
             <Alias name="OMX.qcom.video.encoder.avc"/>
             <Limit name="size" min="128x128" max="1920x1088" />
             <Limit name="alignment" value="2x2" />
@@ -233,7 +233,7 @@
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Limit name="performance-point-1920x1080" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
-        </MediaCodec>
+        </MediaCodec>-->
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
             <Alias name="OMX.qcom.video.encoder.hevc"/>
             <Limit name="size" min="128x128" max="1920x1088" />
