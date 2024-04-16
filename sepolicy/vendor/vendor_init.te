@@ -3,3 +3,11 @@ set_prop(vendor_init, vendor_ims_prop)
 set_prop(vendor_init, vendor_mot_hw_prop)
 
 allow vendor_init proc_sched_lib_mask_cpuinfo:file w_file_perms;
+#============= vendor_init ==============
+allow vendor_init vendor_userdir_file:dir write;
+allow vendor_init debugfs:file setattr;
+allow vendor_init kernel:process setsched;
+set_prop(vendor_init, bluetooth_prop)
+set_prop(vendor_init, default_prop)
+set_prop(vendor_init, vendor_persist_rcs_prop)
+set_prop(vendor_init, vendor_ssr_prop)

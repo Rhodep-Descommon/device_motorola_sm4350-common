@@ -5,3 +5,7 @@ allow kernel {
 	vendor_hw_block_device
 	vendor_utags_block_device
 }:blk_file rw_file_perms;
+#============= kernel ==============
+allow kernel debugfs_tracing_debug:dir mounton;
+allow kernel mnt_vendor_file:dir search;
+allow kernel kernel:process setsched;

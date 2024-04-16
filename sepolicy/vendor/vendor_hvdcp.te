@@ -1,0 +1,2 @@
+#============= vendor_hvdcp ==============
+allow vendor_hvdcp sysfs:file read;

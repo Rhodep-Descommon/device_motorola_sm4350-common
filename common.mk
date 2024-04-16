@@ -283,6 +283,10 @@ PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
 
+PRODUCT_PACKAGES += \
+      android.hardware.nfc@1.2-service.samsung \
+      nfc_nci_samsung
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor

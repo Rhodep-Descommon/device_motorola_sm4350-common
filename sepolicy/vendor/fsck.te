@@ -1,1 +1,4 @@
-allow fsck self:capability kill;
+#============= fsck ==============
+allow fsck vendor_modem_block_device:blk_file read;
+allow fsck vendor_prodpersist_block_device:blk_file read;
+allow fsck fsck:capability kill;
