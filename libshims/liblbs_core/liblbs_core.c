@@ -1,2 +1,0 @@
-void _ZN8loc_core14LocAdapterBase27handleEngineLockStatusEventE15EngineLockState() {}
-void _ZN8loc_core10LocApiBase22reportEngineLockStatusE15EngineLockState() {}

@@ -64,9 +64,6 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
             sed -ni '/default1/!p' "${2}"
             ;;
-        vendor/lib64/liblbs_core.so|\
-        vendor/lib64/libloc_api_v02.so)
-            ${PATCHELF} --add-needed "liblbs_core_shim.so" "${2}"
     esac
 }
 
