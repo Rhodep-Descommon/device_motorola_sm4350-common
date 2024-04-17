@@ -1,0 +1,1 @@
+allow storaged vendor_file:file { getattr  read };

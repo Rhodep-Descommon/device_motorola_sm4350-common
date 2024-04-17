@@ -1,0 +1,2 @@
+#allow vendor_qti_init_shell default_prop:file { getattr  map  open };
+#allow vendor_qti_init_shell sysfs:file { setattr  write };

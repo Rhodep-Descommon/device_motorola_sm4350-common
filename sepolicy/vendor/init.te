@@ -21,15 +21,5 @@ recovery_only(`
   allow init self:capability sys_module;
   allow init rootfs:system module_load;
 ')
-#============= init ==============
-allow init debugfs_tracing_debug:dir mounton;
-allow init vendor_userdir_file:dir write;
-allow init debugfs:file setattr;
-allow init proc:file write;
-allow init sysfs:file write;
-allow init kernel:process setsched;
-set_prop(init, bluetooth_prop)
-set_prop(init, default_prop)
-set_prop(init, vendor_persist_rcs_prop)
-set_prop(init, vendor_ssr_prop)
-allow init vendor_file:file { execute execute_no_trans };
+
+allow init vendor_sysfs_vibrator:file create_file_perms;

@@ -1,0 +1,1 @@
+allow recovery_refresh vendor_file:file { getattr  read };

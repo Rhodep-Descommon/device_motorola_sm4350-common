@@ -1,0 +1,1 @@
+#allow vendor_thermal-engine sysfs:file { getattr  open  read  write };

@@ -1,1 +1,2 @@
-allow tee fingerprint_vendor_data_file:dir create_dir_perms;
+allow tee vendor_persist_egis_file:dir rw_dir_perms;
+allow tee vendor_persist_egis_file:file create_file_perms;

@@ -28,7 +28,7 @@
 #
 #
 import /vendor/etc/init/hw/init.mmi.rc
-
+import /vendor/etc/init/hw/init.sm6375.perf.rc
 import /vendor/etc/init/hw/init.qti.kernel.rc
 on early-init
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/vendor_modprobe.sh
@@ -158,7 +158,3 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
- 
-# Set permissions for sec_nfc
-    chown nfc nfc /dev/sec-nfc
-    chmod 0770 /dev/sec-nfc

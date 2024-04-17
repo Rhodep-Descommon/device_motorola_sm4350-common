@@ -1,0 +1,1 @@
+#allow rild vendor_persist_rcs_prop:file { getattr  map  open  read };

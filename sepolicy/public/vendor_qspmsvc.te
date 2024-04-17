@@ -1,0 +1,1 @@
+allow vendor_qspmsvc vendor_file:file { getattr  read };

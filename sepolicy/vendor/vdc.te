@@ -1,3 +1,1 @@
-#============= vdc ==============
-allow vdc vdc:capability kill;
-allow vdc sysfs:file read;
+allow vdc self:capability kill;

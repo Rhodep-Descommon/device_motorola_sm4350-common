@@ -1,0 +1,6 @@
+allow init hal_nfc_hwservice:hwservice_manager { add  find };
+allow init hidl_base_hwservice:hwservice_manager { add };
+allow init hwservicemanager:binder { call  transfer };
+allow init proc:file { write };
+allow init sysfs:file { open  setattr  write };
+allow init vendor_file:file { execute  execute_no_trans };

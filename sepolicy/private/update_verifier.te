@@ -1,0 +1,1 @@
+allow update_verifier vendor_file:file { getattr  read };
